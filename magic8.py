@@ -3,7 +3,7 @@ import random
 name = "Jess"
 question = "Am I awesome??"
 answer = ""
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 10)
 #print(random_number)
 
 if random_number == 1:
@@ -24,9 +24,18 @@ elif random_number == 8:
   answer = "Outlook not so good."
 elif random_number == 9:
   answer = "Very doubtful."
+elif random_number == 10:
+  answer = "You know it!"
 else:
   answer = "Error"
 
-print(name, "asks:", question)
-print("Magic 8-Ball's answer:", answer)
+if name == "":
+  print("Question:", question)
+else:
+  print(name, "asks:", question)
+
+if question == "":
+  print("Sorry, you did not ask a question.")
+else:
+  print("Magic 8-Ball's answer:", answer)
 
